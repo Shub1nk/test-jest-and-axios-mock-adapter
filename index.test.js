@@ -10,7 +10,7 @@ async function httpRequest () {
 } 
 
 describe('Test', () => {
-  it('Some test', async () => {
+  it('test with axios-mock-adapter', async () => {
       const mock = new MockAdapter(axiosInstance);
 
       mock.onGet(API).reply(200, mockData);
